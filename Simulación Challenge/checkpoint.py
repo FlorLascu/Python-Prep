@@ -12,7 +12,15 @@ def Factorial(numero):
         Factorial(-2) debe retornar nulo
     '''
     #Tu código aca:
-    return 'Funcion incompleta'
+    f=1
+    if type(numero)!=int:
+        return None
+    elif numero <=0:
+        return None
+    else:
+        for i in range(1,numero+1):
+            f=f*i
+    return f #'Funcion incompleta'
 
 def EsPrimo(valor):
     '''
@@ -26,7 +34,17 @@ def EsPrimo(valor):
         EsPrimo(8) debe retornar False
     '''
     #Tu código aca:
-    return 'Funcion incompleta'
+    es_primo=True
+    if type(valor)!=int:
+        return None
+    else:
+        for i in range(2,valor):
+            if valor % i == 0:
+                es_primo=False
+                break
+            else:
+                es_primo=True
+    return es_primo #'Funcion incompleta'
     
 def ClaseAnimal(especie, color):
     '''
@@ -47,4 +65,14 @@ def ClaseAnimal(especie, color):
         a.CumpliAnios() -> debe devolver 3
     '''
     #Tu código aca:
-    return 'Funcion incompleta'
+    class ClaseAnimal():
+        def __init__(self,especie,color):
+            self.edad = 0
+            self.especie = especie
+            self.color = color
+        
+        def CumplirAnios(self):
+            self.edad +=1
+            return self.edad
+
+    return ClaseAnimal(especie,color)#'Funcion incompleta'
