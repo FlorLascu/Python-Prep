@@ -12,7 +12,7 @@ class Herramientas:
             else:
                 print('El elemento', i, 'NO es un numero primo')
 
-    def conversion_grados(self, origen, destino):
+    def conversion_grados(self,valor,origen, destino):
         for i in self.lista:
             print(i, 'grados', origen, 'son', self.__conversion_grados(i, origen, destino),'grados',destino)
     
@@ -93,3 +93,4 @@ class Herramientas:
         if (numero > 1):
             numero = numero * self.__factorial(numero - 1)
         return numero
+    
