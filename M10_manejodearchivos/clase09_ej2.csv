@@ -5,3 +5,6 @@ timestamp,humedad,temperatura,lluvia
 1645191651,27,50,False
 1645191869,30,40,False
 1645191902,31,45,True
+1696614260,50,80,True
+1696614291,60,50,False
+1696614312,25,60,False
